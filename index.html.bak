@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <title>Responsive Navbar</title>
+  <style>
+    
+    h1 {
+      color: #000; /* Initial color */
+      transition: color 1s;
+      font-size: 60px; /* Smooth transition effect */
+    }
+    footer{
+    text-align: center;
+    background-color: #0B0D17;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 115px;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+.bottom-text{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 40px;
+    padding: 37px 0px;
+}
+.name-color{
+    color: #FA9048;
+}
+.last-name{
+    color: #5B5B5B;
+}
+  </style>
+</head>
+<body>
+  <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Navbar</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <nav>
+          <div class="nav-center">
+            <div class="nav-header">
+              <h2>Friendship!</h2>
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <ul class="links">
+              <li>
+                <h1><span style="font-size: 60px;">Best Friend Forever</span></h1>
+
+              </li>
+              
+            </ul>
+      
+            <ul class="social-icons">
+            
+              <li>
+                <a href="https://www.twitter.com">
+                  <i class="fab fa-instagram-square"></i>
+                </a>
+              </li>
+             
+              <li>
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <script src="app.js"></script>
+      </body>
+    </html>
+
+    <section class="about" id="about">
+      <div class="image">
+        <img src="images\WhatsApp Image 2023-08-25 at 2.09.38 AM.jpeg" alt="" >
+
+      </div>
+  
+      <div class="content">
+        <h3 class="title" id="changing-h3">
+  <font color="red">Dear</font>
+  <font color="blue">Thanuja</font>
+</h3>
+
+        <p>I am truly blessed and lucky to have a friend like you in my life which fills me with a profound appreciation for our enduring friendship.
+        <p>Throughout the ups and downs, our bond will remain same. I make countless memories with you.</p>
+        <p>Our connection means the world to me, and I'm committed to making amends and ensuring that our friendship continues to thrive with understanding and kindness.</p>
+        <a href="#" class="btn">read more</a>
+        <div class="icons-container">
+          <div class="icons">
+            <img src="images\download (22)-PhotoRoom.png-PhotoRoom.png" alt="">
+            <h3>Friendship</h3>
+          </div>
+          <div class="icons">
+            <img src="images\download (21)-PhotoRoom.png-PhotoRoom.png" alt="">
+            <h3>Memories</h3>
+          </div>
+          <div class="icons">
+            <img src="images\download-PhotoRoom.png-PhotoRoom.png" alt="">
+            <h3>Others</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <script>
+      // JavaScript code to change the h1 and h3 color
+      const changingH1 = document.querySelector('.links h1');
+      const colors = ['#FF5733', '#33FF77', '#3399FF', '#FF33FF', '#FFFF33'];
+      let currentIndex = 0;
+  
+      setInterval(() => {
+        changingH1.style.color = colors[currentIndex];
+        currentIndex = (currentIndex + 1) % colors.length;
+      }, 1000); // Change color every second
+    </script>
+    <footer>
+      <p class="bottom-text"><span class="name-color">Thanuja</span> <span class="last-name">Vandanapu</span></p>
+      <h2>A true friend is for ever a friend.A friend is one soul abiding in two bodies.</h2>
+  </footer>
+  </body>
+  </html>
+  
